@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, Outlet } from "react-router";
 import Navbar from "../../components/Header/Navbar";
+import CoffeeList from "../../components/coffeeList/CoffeeList";
 
 function RootLayout() {
   return (
     <>
       <Navbar />
-      <h1 className="text-5xl text-yellow-400">Root Layout</h1>
+      <CoffeeList/>
       <Outlet></Outlet>
     </>
   );
